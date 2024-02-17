@@ -1,0 +1,204 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html,body
+{
+    height: 100%;
+    width:100%;
+}
+
+.main
+{
+    background: black;
+}
+
+
+
+.page1
+{
+    min-height: 100vh;
+    width: 100%;
+
+    color: black;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 4%;
+    padding-top: 45px;
+}
+
+
+
+.calender
+{
+    height: 80vh;
+    width: 70%;
+   background-color: #878895;
+   border-radius: 5px;
+  position: relative;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+    justify-content: space-between;
+
+    padding-top: 2%;
+    padding-right: 2%;
+   
+}
+
+
+
+
+.left_side
+{
+    width: 60%;
+    height: 90%;
+    margin-left: 5%;
+    background-color: whitesmoke;
+    position: relative;
+    
+}
+
+
+.left_side::before,
+.left_side::after
+{
+   content: "";
+   position: absolute;
+   top:50%;
+   left:100%;
+   width: 12px;
+   height: 97%;
+   border-radius: 0 5px 5px 0;
+   background-color: silver;
+   transform: translateY(-50%);
+  
+}
+
+.left_side::before 
+{
+    height: 94%;
+    left: calc(100% + 12px);
+    background-color: rgb(153, 153, 153);
+}
+
+.head
+{
+    height: 20vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+
+.days
+{
+    height: 3vh;
+    width: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 8%;
+   padding-right: 8%;
+   position:absolute;
+  
+   
+}
+
+.right_side
+{
+    
+}
+.notes
+{
+   height: 10vh;
+   width:100%;
+   
+  
+}
+
+
+/**
+.dates
+{
+ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid wheat;
+    position: absolute;
+}
+
+.day
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid wheat;
+    margin: 20px 5px;
+    padding: 40px 5px;
+    position: relative;
+}
+/**
+
+
+.right_side
+{
+    width: 50%;
+}**/
+
+
+.calender .dates
+{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-left:4%;
+    padding-right: 4%;
+
+    
+   
+}
+
+.calender .dates .day
+{
+    width: 3%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+   
+   border: 1px solid silver;
+   padding: 3% 6%;
+   border-radius: 25%;
+ 
+   transition: background-color linear 1s;
+ 
+}
+
+
+.calender .dates .day:hover
+{
+      background-color: silver;
+      color: blueviolet;
+      
+}
